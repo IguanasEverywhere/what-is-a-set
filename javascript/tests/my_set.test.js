@@ -13,7 +13,7 @@ test('initialize(iterator = nil) populates @data with keys when given an Array o
   const arraySet = new MySet([1, 2, 1, 3]);
   const sortedArraySet = Object.keys(arraySet.data).sort();
   const sortedDataSet = Object.keys(dataSet.data).sort();
-  
+
   expect(sortedArraySet).toEqual(["1", "2", "3"]);
   expect(sortedDataSet.join('')).toBe('ehlo');
 });
